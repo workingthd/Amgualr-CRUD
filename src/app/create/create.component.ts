@@ -24,6 +24,7 @@ hides=false
   }
   name="angular"
   getdata(data:any){
+    debugger
     this.user.savedata(data).subscribe((results)=>{
       if(results['status']=='success'){
         this.comings.emit()
